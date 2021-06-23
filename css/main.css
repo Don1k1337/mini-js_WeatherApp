@@ -22,6 +22,14 @@ body {
     margin: 1em;
 }
 
+.weather__desc {
+    text-transform: capitalize;
+}
+
+.weather__icon {
+    display: flex;
+    align-items: center;
+}
 .search-bar {
     display: flex;
     font-size: 90%;
@@ -32,19 +40,45 @@ body {
     border-radius: 18em;
     border: none;
     outline: none;
-    width: calc(100% - 60px);
+    width: calc(100% - 65px);
+}
+
+.search-bar__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
     border-radius: 50%;
     outline: none;
     border: none;
-    width: 2.5em;
-    height: 2.5em;
+    width: 42px;
+    height: 42px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 button:hover {
     background: #7c7c7c8b;
+}
+
+.h1.temp {
+    margin: 0 0 0.3em;
+}
+
+.weather-container.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather-container.loading:after {
+    visibility: visible;
+    content: "For viewing current weather in your area please type name of the city in the search-bar";
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }

@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mini-Weather App</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 <div class="main-container__card">
-    <div class="search-bar">
+    <div class="search-bar__container">
         <input type="text" class="search-bar" placeholder="Type some city here">
         <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
                      width="1.5em" xmlns="http://www.w3.org/2000/svg">
@@ -20,15 +20,15 @@
             </path>
         </svg></button>
     </div>
-    <div class="main-container weather__loader">
-        <h2 class="city">Weather in Bishkek now</h2>
-        <h1 class="temp">32°C</h1>
-        <div class="main-container weather__icon">
+    <div class="weather-container loading">
+        <h2 class="city">Weather in Bishkek</h2>
+        <h1 class="temp">28°C</h1>
+        <div class="weather__icon">
             <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-            <div class="main-container weather__desc">Cloudy</div>
+            <div class="weather__desc">Cloudy</div>
         </div>
-        <div class="humidity">Humidity feels like: 28%</div>
-        <div class="wind">Wind speed: 4.2 m/s</div>
+        <div class="humidity">Humidity: 23%</div>
+        <div class="wind">Wind speed: 4.2 km/h</div>
     </div>
 </div>
 </body>
