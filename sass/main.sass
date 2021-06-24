@@ -1,4 +1,10 @@
 @import 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap'
+$smallScreens: 360px
+$mediumScreens: 768px
+// phone screens
+$iPhoneScreens_seven-eight-plus: 414px
+$iPhoneScreens_5-SE: 320px
+$Galaxy-Fold-screens: 280px
 
 body
   display: flex
@@ -8,7 +14,7 @@ body
   margin: 0
   font-family: 'Work Sans', sans-serif
   background-image: url('https://source.unsplash.com/1600x900/?cyberpunk')
-  font-size: 120%
+  font-size: 110%
 
 .main-container__card
   background: #000000d0
@@ -71,3 +77,19 @@ button:hover
   position: absolute
   top: 0
   left: 20px
+
+@media screen and (min-width: $smallScreens)
+  .weather-container.loading:after
+    font-size: 14.5px
+@media screen and (min-width: $iPhoneScreens_seven-eight-plus)
+  .weather-container.loading:after
+    font-size: 14.5px
+@media screen and (min-width: $iPhoneScreens_5-SE)
+  .weather-container.loading:after
+    font-size: 12.5px
+@media screen and (min-width: $Galaxy-Fold-screens)
+  .weather-container.loading:after
+    font-size: 10.5px
+@media screen and (min-width: $Galaxy-Fold-screens)
+  .weather-container.loading:after
+    font-size: 17px
