@@ -44,3 +44,4 @@ document.querySelector('.search-bar__container button').addEventListener('click'
 })
 
 // console.log("Saved data in LS: " + localStorage.getItem('city'));
+
