@@ -43,5 +43,11 @@ document.querySelector('.search-bar__container button').addEventListener('click'
     localStorage.setItem('city', JSON.stringify(objToLS))
 })
 
+document.querySelector('.search-bar').addEventListener('keyup', (e) => {
+    if(e.key === "Enter") {
+        weather.searchWeather();
+    }
+})
+
 // console.log("Saved data in LS: " + localStorage.getItem('city'));
 
